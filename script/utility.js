@@ -33,6 +33,24 @@ function removeBackgroundColorById(elementId) {
     element.classList.remove('bg-orange-400');
 }
 
+
+function continueGame() {
+    // Step=1 : Generate a random alphabet
+    const alphabet = getARandomAlphabet();
+    // console.log(alphabet)
+
+    // set Randomly generated alphabet to the screen (show it)
+    const currentAlphabetElement = document.getElementById('current-alphabet');
+    currentAlphabetElement.innerText = alphabet;
+
+
+    // set Background Color
+    setBackgroundColorById(alphabet)
+}
+
+
+
+
 // function getRandomAlphabet() {
 //     // const alphabets = ['a', 'b','c']
 //     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
